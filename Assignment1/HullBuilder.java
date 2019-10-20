@@ -43,7 +43,7 @@ public class HullBuilder{
     }
  
     public int binarySearchIndex (ArrayList<Point2d> arr, Point2d P){
-        return Collections.binarySearch(arr, P, (Point2d a, Point2d b)->{
+        return Collections.binarySearch(arr, P, (a, b)->{
             int result = Double.compare(a.x, b.x);
             if (result==0) result = Double.compare(a.y, b.y);
             return result;
